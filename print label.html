@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Dropdown Menus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 3px;
+      margin: 0;
+    }
+
+    .img1{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .x-wrapper {
+      position: relative;
+      width: 30px; /* حجم نفس حجم الـ x الأصلية تقريبًا */
+      height: 30px;
+    }
+
+    .custom-x {
+      position: absolute;
+      top: -0px; /* تقدر تعدل حسب مكان الـ x الأصلية */
+      left: 1430px;
+      z-index: 2;
+      width: 50px; /* حجم X الكبيرة */
+      cursor: pointer;
+    }
+
+    .btn{
+      position: absolute;
+      top: 70px; /* تقدر تعدل حسب مكان الـ x الأصلية */
+      right: 1230px;
+      z-index: 2;
+      width: 240px; /* حجم X الكبيرة */
+      height: 20px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .btn2{
+      position: absolute;
+      top: 338px; /* تقدر تعدل حسب مكان الـ x الأصلية */
+      right: 961px;
+      z-index: 2;
+      width: 60px; /* حجم X الكبيرة */
+      height: 20px;
+      cursor: pointer;
+      text-align: left;
+    }
+</style>
+<div class="img1"><img src="image/pprint.jfif" alt=""></div>
+<div><button class="btn"><a href="#" class="ipd"></a></button></div>
+<div><button class="btn2"><a href="print.html" class="ipd">Cancel</a></button></div>
+</head>

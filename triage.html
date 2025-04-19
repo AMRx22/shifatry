@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Dropdown Menus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 3px;
+      margin: 0;
+    }
+
+    .img1{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .x-wrapper {
+      position: relative;
+      width: 30px; /* حجم نفس حجم الـ x الأصلية تقريبًا */
+      height: 30px;
+    }
+
+    .custom-x {
+      position: absolute;
+      top: -0px; /* تقدر تعدل حسب مكان الـ x الأصلية */
+      left: 1430px;
+      z-index: 2;
+      width: 50px; /* حجم X الكبيرة */
+      cursor: pointer;
+    }
+
+    </style>
+ <div class="x-wrapper">
+    <!-- هذا هو الرابط اللي يوصلك لصفحة ثانية -->
+    <a href="shifa try.html">
+      <!-- صورة X الكبيرة -->
+      <img src="image/x.jpg" alt="Big X" class="custom-x">
+    </a>
+ </div>
+    <div class="img1"><img src="image/unnamed (1).jpg" alt=""></div>

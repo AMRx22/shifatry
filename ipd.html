@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Dropdown Menus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 3px;
+      margin: 0;
+    }
+
+    .img1{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .lab{
+      color: #ffffff;
+    }
+
+    .x-wrapper {
+      position: relative;
+      width: 30px; /* حجم نفس حجم الـ x الأصلية تقريبًا */
+      height: 30px;
+    }
+
+    .custom-x {
+      position: absolute;
+      top: -0px; /* تقدر تعدل حسب مكان الـ x الأصلية */
+      left: 1380px;
+      z-index: 2;
+      width: 50px; /* حجم X الكبيرة */
+      cursor: pointer;
+    }
+
+    .btn{
+      position: absolute;
+      top: 246px; /* تقدر تعدل حسب مكان الـ x الأصلية */
+      right: 1150px;
+      z-index: 2;
+      width: 193px; /* حجم X الكبيرة */
+      height: 33px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .ipd{
+        color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="x-wrapper">
+    <!-- هذا هو الرابط اللي يوصلك لصفحة ثانية -->
+    <a href="print.html">
+      <!-- صورة X الكبيرة -->
+      <img src="image/x.jpg" alt="Big X" class="custom-x">
+    </a>
+ </div>
+    <div class="img1"><img src="image/ipd.jfif" alt=""><img src="fddf.jpg" alt=""></div>
+    <div><button class="btn"><a href="shifa try.html" class="ipd">Mohammed Mohammed</a></button></div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horizontal Dropdown Menus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 3px;
+      margin: 0;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1px;
+      position: absolute;
+      top: 135px;
+      right: 520px;
+    }
+
+    .menu-box {
+      background-color: #6B4AAA;
+      color: white;
+      width: 80px;
+      left: 25px;
+      border-radius: 2px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s;
+      position: relative;
+    }
+
+    .menu-box:hover {
+      background-color: #aaa8ad;
+    }
+
+    .menu-header {
+      padding: 1px;
+      font-weight: bold;
+      display: flex;
+      font-size: 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .menu-box.open .arrow {
+      transform: rotate(90deg);
+    }
+
+    .menu-content {
+      display: none;
+      background-color: #6B4AAA;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 0 0 10px 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .menu-content a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 10px;
+      padding: 5px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .menu-content a:last-child {
+      border-bottom: none;
+    }
+
+    .menu-content a:hover {
+      color: #ffffff;
+    }
+
+    .menu-box.open .menu-content {
+      display: block;
+    }
+
+    .img1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .x-wrapper {
+      position: relative;
+      width: 30px; /* حجم نفس حجم الـ x الأصلية تقريبًا */
+      height: 30px;
+    }
+
+    .custom-x {
+      position: absolute;
+      top: -0px; /* تقدر تعدل حسب مكان الـ x الأصلية */
+      left: 1430px;
+      z-index: 2;
+      width: 50px; /* حجم X الكبيرة */
+      cursor: pointer;
+    }
+
+    .lab{
+      color: #ffffff;
+    }
+    </style>
+  </head>
+  <body>
+    
+ 
+ <div class="x-wrapper">
+    <!-- هذا هو الرابط اللي يوصلك لصفحة ثانية -->
+    <a href="shifa try.html">
+      <!-- صورة X الكبيرة -->
+      <img src="image/x.jpg" alt="Big X" class="custom-x">
+    </a>
+ </div>
+    
+    <div class="menu-container">
+      <!-- Repeat this block 11 times -->
+      <div class="menu-box">
+        <div class="menu-header">
+          Summary<span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#">Patient Summary</a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">
+          Note <span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#">ED Disposal</a>
+          <a href="#">Notes</a>
+          <a href="#">Other Exam</a>
+          <a href="#">Screening</a>
+          <a href="#">Addendum</a>
+          <a href="triage.html">Triagr Information</a>
+          <a href="#">Pregnency info</a>
+          <a href="#">Pregnency info nurse</a>
+          <a href="#">Nursing Procedure</a>
+          <a href="kar.html">Kardix</a>
+          <a href="#">Discharge Summary</a>
+          <a href="#">CPR Register</a>
+          <a href="#">Progress Note</a>
+          <a href="#">Child Health Rigester</a>
+          <a href="#">E.P.I Register</a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Consults <span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header"> <a href="lab.html" class="lab">Laboratory</a>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="lab.html">Blood/Transfusion Request</a>
+          <a href="#">Transfusion Monitoring</a>
+          <a href="#">Lab History</a>
+          <a href="#">Lab Request</a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Procedure<span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="Procedure.html">Imaging Request</a>
+          <a href="#">Respiratory Procedure</a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Medicine<span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#">Clinical Pharmacist Approval</a>
+          <a href="med.html">Medicine Administration</a>
+          <a href="#">Medicine Administration View</a>
+          <a href="#">Medicine History</a>
+          <a href="#">Evidence Based Medication</a>
+          <a href="#">Micro Medex</a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Schedule<span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Reading<span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#">CCOT Record</a>
+          <a href="#">Circulatory Senso Motor</a>
+          <a href="#">Coma Observation Chart</a>
+          <a href="#">Continuous Irrigation</a>
+          <a href="dm.html">Diabetic Chart</a>
+          <a href="#">Mech. Ventilator Chart</a>
+          <a href="#">Vaccination</a>
+          <a href="#">Adult SEWS</a>
+          <a href="#">Process Sheet</a>
+          <a href="#">Cardiac Output</a>
+          <a href="#">Convultion Chart</a>
+          <a href="#">Tubes IV Lines</a>
+          <a href="#">Turning Chart</a>
+          <a href="vs.html">Vital Signs/Anthopometry</a>
+          <a href="#">Stool Chart</a>
+          <a href="#">Assessment</a>
+          <a href="#">Critical Observation Chart</a>
+          <a href="#">Ventilatory Chart</a>
+          <a href="#">Intake-Output</a>
+          <a href="#">Growth Chart</a>
+          <a href="#">Nursing Information Sheet</a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Surgery<span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#">Anesthesia</a>
+          <a href="#">Surgery Appointment</a>
+          <a href="#">Surgery Note</a>
+          <a href="#">Non OT Surgery Note</a>
+          <a href="#">Pre-op Nursing Checklest</a>
+          <a href="#">Surgery Instruction</a>
+          <a href="#">Intra-op Note</a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Reports <span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+  
+      <div class="menu-box">
+        <div class="menu-header">Utilities <span class="arrow">▶</span>
+        </div>
+        <div class="menu-content">
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="img1"><img src="image/labb.jfif" alt=""></div>
+
+    <script>
+      const boxes = document.querySelectorAll('.menu-box');
+      boxes.forEach(box => {
+        box.querySelector('.menu-header').addEventListener('click', () => {
+          // Close others
+          boxes.forEach(b => {
+            if (b !== box) b.classList.remove('open');
+          });
+          // Toggle current
+          box.classList.toggle('open');
+        });
+      });
+    </script>
+  </body>
